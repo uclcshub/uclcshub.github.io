@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: 👋 Dummy Page
+title: 👋 Welcome
 ---
 
-Hello World! 👋
+**Hello, world!** 👋
