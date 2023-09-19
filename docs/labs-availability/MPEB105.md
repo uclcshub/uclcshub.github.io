@@ -4,9 +4,7 @@ sidebar_label: MPEB 1.05
 ---
 
 # MPEB 1.05
-
-*Enjoy the summer break!* 🔥🥳
-
+Come grab a seat to study, chat, or relax with a cup of joe! ☕️
 
 | Time/Day        | Monday | Tuesday | Wednesday | Thursday | Friday |
 |-----------------|:------:|:-------:|:---------:|:--------:|:------:|
