@@ -1,0 +1,96 @@
+---
+sidebar_position: 5
+sidebar_label: Python
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Python 3
+
+> Python is an experiment in how much freedom programmers need. Too much freedom and nobody can read another's code;
+> too little and expressiveness is endangered. -- _Guido van Rossum_
+
+We only use Python 3 at UCL because it’s 2023 and Python 2 is long lost in the past, thank goodness.
+
+:::caution
+
+Unlike Java JDK versions, **Python 2 and Python 3 are separate languages**! They differ in syntax and much more!
+
+:::
+
+## Install Python
+
+<Tabs>
+<TabItem value="homebrew" label="Homebrew" default>
+
+The simplest way to install Python 3 is to use Homebrew! Open Terminal and run the following command to install Python:
+
+```bash
+brew install python
+```
+
+Once it's completed (which may take some time!), let's test that Python has been installed correctly.
+
+Type `python3` in Terminal. This should open interactive shell, where you can type...
+
+```python
+print("Hello World!")
+```
+
+...and expect a kind greeting from your very own Python! Congratulations! 🐍 🎉
+
+:::tip
+
+You can close Python's interactive shell by pressing `Ctrl`+`D` or typing `exit()`.
+
+:::
+
+![python test git](/gif/python_test.gif)
+
+:::tip
+
+Although not necessary for using Python,
+you may find it helpful to install the standard GUI library - `tkinter`:
+
+```bash
+brew install python-tk
+```
+
+:::
+
+</TabItem>
+
+<TabItem value="pythonorg" label="Python.org">
+
+If you prefer to download Python from the official Python website,
+visit [the Downloads page](https://www.python.org/downloads/)!
+
+</TabItem>
+</Tabs>
+
+## Set up your IDE
+
+<Tabs>
+<TabItem value="vs-code" label="VS Code" default>
+
+VS Code is a highly customizable code editor, which has fantastic extensions! Install the official support for Python, which provides you with great code completion, code formatter, framework for testing, debugging, and more!
+
+![Python extensions picture](/img/python_extension.png)
+
+</TabItem>
+
+<TabItem value="jetbrains-pycharm" label="JetBrains PyCharm">
+
+PyCharm is a powerful IDE, with lots of useful built-in tools! Assuming you've already got your JetBrains Toolbox (if not, [check this out!](/docs/set-up-environment/macos#jetbrains-toolbox)):
+
+1. Open the JetBrains Toolbox and install PyCharm Professional, once opened it should automatically find your Python environment.
+
+</TabItem>
+</Tabs>
+
+:::tip Well done!
+
+You're all set to deal with snakes! 🐍
+
+:::

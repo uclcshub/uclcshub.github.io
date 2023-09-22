@@ -1,0 +1,104 @@
+---
+sidebar_position: 2
+sidebar_label: C
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# The C Programming Language
+
+> C has the power of assembly language and the convenience of … assembly language. -- _Dennis Ritchie_
+
+Mac already has gcc (the compiler we need for C) and debugging tools installed for C so we just need to setup the IDE.
+
+## Configure your IDE
+
+:::tip
+
+While you can probably survive your C class without touching Terminal, **we recommend using it**!
+It not only gives you a better understanding of how a computer program is created, but also **prepares you for your further modules, which almost certainly will require familiarity with the shell**.
+
+:::
+
+<Tabs>
+<TabItem value="vs-code" label="VS Code" default>
+
+**Let's use VS Code to create a simple C program!**
+
+1. Open VS Code and create an empty file called `main.c`. This will be our C code source file. Such files have the `.c` extension!
+2. Paste the following snippet and save the file:
+
+   ```c
+   #include <stdio.h>
+
+   int main() {
+       printf("Hello, World!\n");
+       return 0;
+   }
+   ```
+
+3. Now, you need to _compile_ your code. Let's see how we can do it from Terminal. Open Terminal in the same directory as the `main.c` file and run the following command:
+   `bash
+gcc -o main_executable main.c
+`
+   This command will invoke `gcc` - compiler of the C code, compile the file called `main.c` and output a binary file named `main_executable`.
+4. To run your program, simply type:
+
+   ```bash
+   ./main_executable
+   ```
+
+   which should produce
+
+   ```bash
+   > Hello, World!
+   ```
+
+Well done, _Terminal_ is for _Turbo_ cool people! 🎉 🥳
+
+</TabItem>
+
+<TabItem value="jetbrains-clion" label="JetBrains CLion">
+
+### Installation
+
+1. Open the Jetbrains Toolbox and install [CLion](https://www.jetbrains.com/clion/).
+
+2. Press `New Project`, select C executable from the new project screen with any language standard.
+   A simple Hello World program should open and if you click the play symbol at the top right it will compile and execute in a terminal at the bottom of the screen.
+
+   ```c
+    #include <stdio.h>
+
+    int main() {
+        printf("Hello, World!\n");
+        return 0;
+    }
+   ```
+
+### Additional Notes
+
+1. CLion uses CMake to configure running your project. While others are worrying about linking new files to their project
+   you can simply add it to the `add_executable` section (as shown with `new_file.c` below).
+
+   ```c
+   cmake_minimum_required(VERSION 3.16)
+   project(untitled C)
+
+   set(CMAKE_C_STANDARD 99)
+
+   add_executable(untitled main.c new_file.c)
+   ```
+
+2. If you ever need to pipe something from C to another program (such as a turtle program) then you can compile your
+   application with CLion (hammer icon) and then run your program in terminal with a pipe operator.
+
+   ```bash
+   > .\your_program | turtle
+   ```
+
+3. If you ever need to access `gcc` directly then you can access it via your terminal.
+
+</TabItem>
+</Tabs>
