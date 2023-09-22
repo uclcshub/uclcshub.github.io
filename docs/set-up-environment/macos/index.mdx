@@ -2,9 +2,156 @@
 sidebar_position: 1
 ---
 
+import DocCardList from "@theme/DocCardList";
 
-import DocCardList from '@theme/DocCardList'
+# 🍎 Mac Getting Started
 
-# 🛠️ Set Up Your Environment
+You have it slightly easier than the 🪟 Windows users, but there's still some work to do! Luckily for you people,
+a lot of the work is done for you and doesn't require typing much.
+
+## Step 1: Homebrew and Developer Tools
+
+### Homebrew
+
+[Homebrew](https://brew.sh) will change and/or save your life as a Mac developer. It will also install the C compiler,
+amongst many other bits and pieces that will be super useful. So let's do it!
+
+Open a Terminal window, you can find it in /Applications/Utilities or press `Cmd`+`Space` and search for "terminal".
+Once you have your Terminal window open, paste the following command in, all on one line.
+Enter your password when it asks you to:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+:::tip
+
+When you're typing in your password, you won't actually see it being typed (not even the asterisks!) 👻.
+Don't worry and just type your password and press Enter at the end. If you got it wrong, the Terminal will ask
+you to try again!
+
+:::
+
+Once installed, you may see some extra updates for the macOS Developer Tools in the Mac App Store. Go ahead and
+install those.
+
+## Step 2: Set up your IDE
+
+### Visual Studio Code
+
+[VS Code](https://code.visualstudio.com) is a great code editor, with a huge community and a number of useful extensions!
+It works out of the box, with the support for syntax highlighting, debugging, git and many more!
+
+**You can download it [here](https://code.visualstudio.com)** or use homebrew:
+
+```bash
+brew install --cask visual-studio-code
+```
+
+<details>
+  <summary>See how to run VS Code directly from Terminal!</summary>
+  <div>
+    <div>
+
+Sometimes, it is convenient to run VS Code from your terminal. Let's say you have a simple project in a directory called `hello-world/`.
+You can open it in VS Code just like this:
+
+```bash
+code hello-world/
+```
+
+To make sure your shell understands what to do with the `code` keyword, you should ensure your VS Code is added to the `$PATH` environmental variable!
+Authors of VS Code made it really simple, and you can add VS Code to `$PATH` with the following steps:
+
+1. Open _VS Code_.
+2. Open the editor commands window by pressing `Shift`+`Cmd`+`P`.
+3. Type `Shell command PATH`, and select `Shell Command: Install 'code' command in PATH`.
+4. Authorize with your password, if prompted to do so.
+5. Voilà! Now, test it as follows.
+
+   - Navigate to the home directory:
+
+     ```bash
+     cd ~
+     ```
+
+   - Open VS Code in the home directory
+
+     ```bash
+     code .
+     ```
+
+   :::note
+
+   The dot symbol `.` represents your current directory, so you're essentially telling your terminal to run `code` "here"! _Cool, huh?_
+
+   :::
+
+</div>
+<br />
+
+  </div>
+</details>
+
+### Jetbrains Toolbox
+
+The tools you use can transform development from being a chore to a joy. Having a consistent environment across all
+languages has advantages. Jetbrains tools are free for students, and they offer advanced IntelliSense (auto code completion) capabilities.
+
+1. If you have not already, sign-up for the [Jetbrains Student Pack](https://www.jetbrains.com/student/).
+
+- If you already have GitHub Student Developer Pack, you should be able to authorize with it.
+- Otherwise, use your UCL email address!
+
+2. Download the [Toolbox App](https://www.jetbrains.com/toolbox-app/) and sign in with your account. This will
+   automatically license any Jetbrains tools on your system.
+
+## Step 3: Git
+
+[Git](https://git-scm.com) is a **really powerful tool** ⚡️! It is an example of Version Control Software (VCS),
+which essentially is a time machine allowing you to track changes, go back in time (when needed!) and collaborate efficiently with fellow developers.
+It's a **true life-saver**, when after removing some useless-looking piece of code,
+it turns out to be critical 3 days later. With git, you can just look it up and revert\*!
+
+Git should already be installed, and you can verify that with:
+
+```bash
+git --version
+```
+
+If not installed you can install with Homebrew:
+
+```bash
+brew install git
+```
+
+You can then configure your username and email:
+
+```bash
+git config --global user.name "Username"
+git config --global user.email "Email-Use-Github-Anonymous"
+```
+
+To find your github email address you can go here: https://github.com/settings/emails.
+
+\*_when used properly, LOL_
+
+:::tip
+
+You will be using `git` and GitHub in several modules and courseworks.
+There are multiple ways of interactig with GitHub. You can use:
+
+- [GitHub Desktop](https://desktop.github.com/),
+- Git/GitHub extension to your IDE,
+- `git` command line interface.
+
+We **recommend** trying the command line interface. There is a range of useful tutorials:
+
+- How Git works https://www.atlassian.com/git
+- Official Git Tutorial https://git-scm.com/docs/gittutorial
+- Learn Git Branching (_really cool!_) https://learngitbranching.js.org/
+
+To make this as smooth as possible, you may want to [read how to use Secure Shell (SSH)](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to connect to GitHub!
+:::
 
 <DocCardList />

@@ -1,0 +1,69 @@
+---
+sidebar_position: 3
+sidebar_label: Haskell
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Haskell
+
+> Code written in Haskell is guaranteed to have no side effects ... because no one will ever run it?
+> -- _[XKCD 1312](https://www.xkcd.com/1312)_
+
+## Install Haskell
+
+<Tabs>
+<TabItem value="homebrew" label="Homebrew" default>
+
+Paste the following command to your Terminal window:
+
+```bash
+brew install ghc cabal-install haskell-stack haskell-language-server
+```
+
+This make take a while to install all necessary Haskell components. Once finished, let's test your installation:
+
+1. Type `ghci` in terminal. This will open Prelude - Haskell's interactive shell.
+2. Type `2022 + 1` and hit `Enter`.
+3. Enjoy Haskell telling you the current year! _Woooah!_ 🥳
+
+:::tip
+
+To close Prelude, simply hit `Ctrl`+`D`. Just like in Python!
+
+:::
+
+</TabItem>
+
+<TabItem value="ghcup" label="GHCup (officially supported)">
+
+We need to install GHCup, which includes all necessary components to execute Haskell code.
+Run the following command in a Terminal window:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+```
+
+Once you see the message "Welcome to Haskell!", you'll be prompted about updating your `$PATH` variable, installing HLS and better integration with GHCup. Please choose all the default values:
+![haskell start installation](/gif/haskell_start.gif)
+
+The download and installation may take a couple of minutes. Once all components are installed, test your Haskell by launching its interactive shell with `ghci` and typing `1 + 1`:
+![haskell test](/gif/haskell_end.gif)
+
+</TabItem>
+</Tabs>
+
+## Get VS Code extension
+
+JetBrains do not have an IDE for Haskell,
+but VS Code works very well with the **official Haskell extension**!
+
+![haskell extensions](/img/haskell_extension.png)
+
+:::tip
+
+Cool! You're all set to start your journey with functional programming.
+Psst... There is a pretty good online guide to Haskell: [Learn You A Haskell for Great Good!](http://learnyouahaskell.com/) 📚
+
+:::
