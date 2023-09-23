@@ -1,0 +1,3 @@
+# Only Markdown and MDX
+\.[mM][dD]$
+\.[mM][dD][xX]$
