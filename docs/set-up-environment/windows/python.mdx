@@ -1,0 +1,85 @@
+---
+sidebar_position: 5
+sidebar_label: Python
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Python 3
+
+> Python is an experiment in how much freedom programmers need. Too much freedom and nobody can read another's code;
+> too little and expressiveness is endangered. -- _Guido van Rossum_
+
+We only use Python 3 at UCL because it’s 2023 and Python 2 is long lost in the past, thank goodness.
+
+:::caution
+
+Unlike Java JDK versions, **Python 2 and Python 3 are separate languages**! They differ in syntax and much more! Therefore, keep in mind that whenever Python is mentioned, it is implied to be Python 3.
+
+:::
+
+## Download Python
+
+<Tabs>
+<TabItem value="winget" label="Winget" default>
+
+Run the following command in PowerShell to install Python:
+
+```powershell
+winget install -e --id Python.Python.3.11
+```
+
+</TabItem>
+<TabItem value="official-python" label="Executable">
+
+Download the latest version of [Python 3](https://www.python.org/downloads). When offered, it is a good idea to add
+it to your `PATH`.
+
+</TabItem>
+</Tabs>
+<br/>
+<details>
+<summary>Let's test your installation!</summary>
+
+Type `python3` in Terminal. This should open interactive shell, where you can type...
+
+```python
+print("Hello World!")
+```
+
+...and expect a kind greeting from your very own Python! Congratulations! 🐍 🎉
+
+:::tip
+
+You can close Python's interactive shell by pressing `Ctrl`+`D` or typing `exit()`.
+
+:::
+
+![python test git](/gif/python_test.gif)
+
+</details>
+
+## Configure your IDE
+
+<Tabs>
+<TabItem value="vs-code" label="VS Code" default>
+
+VS Code is a highly customizable code editor, which has fantastic extensions! Install the official support for Python, which provides you with great code completion, code formatter, framework for testing, debugging, and more!
+
+![Python extensions picture](/img/python_extension.png)
+
+</TabItem>
+<TabItem value="jetbrains-pycharm" label="JetBrains PyCharm">
+
+Open the Jetbrains Toolbox and install PyCharm Professional. Once opened, it should automatically find your Python
+environment.
+
+</TabItem>
+</Tabs>
+
+:::tip Well done!
+
+You're all set to deal with snakes! 🐍
+
+:::

@@ -1,10 +1,197 @@
----
-sidebar_position: 1
----
+import DocCardList from "@theme/DocCardList";
 
+# 🪟 Windows Getting Started
 
-import DocCardList from '@theme/DocCardList'
+Windows has changed significantly in the last few years. It may have been recommended to try and emulate [UNIX](https://en.wikipedia.org/wiki/Unix) either
+with virtualization products[^1] or WSL[^2]. This is not required, and you are likely to face development difficulties when you start crafting more complex applications (especially with debugging).
 
-# 🛠️ Set Up Your Environment
+:::tip
+Note that this guide is primarily designed for Windows 11. Although Windows 10 is still perfectly functional, it is strongly recommended you upgrade if possible.
+:::
+
+## Step 1: Powershell Core and Winget
+
+### PowerShell Core
+
+One of the biggest reasons Windows used to be so horrible to develop on was that you were either stuck with [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe) (which is somehow still backwards compatible with scripts from Windows-95) or [Windows PowerShell](https://en.wikipedia.org/wiki/PowerShell). PowerShell was not terrible it was
+just annoying and completely different to any other command line interface you might end up using. Now we have
+PowerShell Core, a complete rewriting of PowerShell to make it easier to use and more [bash](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>) like.
+
+1. Download the latest release of
+   [PowerShell Core](https://github.com/PowerShell/PowerShell) for your system, it is likely you have a 64-bit machine
+   (and it is Windows) so PowerShell-7.2.6-win-x64.msi should work nicely (you should use win-x86.msi if your
+   machine is 32-bit[^3]).
+
+2. Run the msi file and install.
+
+3. You probably just opened PowerShell 7 and think it looks rather dated for a brand-new command line. This is where
+   [Windows Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) comes in, a Microsoft Store app to update
+   that old look.
+
+4. Open Windows Terminal and click the dropdown and select the updated PowerShell. If the updated PowerShell is not
+   the default shell you can click on Settings and change the `defaultProfile` to be the GUID with the source of:
+   `Windows.Terminal.PowershellCore`.
+
+![PowerShell Core Option 3](/img/windows-getting-started-powershell-core.png)
+
+5. Test your shell with the following command. If it fails, then it is likely you are running Command Prompt or the old
+   Windows PowerShell.
+
+```powershell
+(Test-Path ~) ? "Everything works!" : "Everything also works, but somehow you don't have a user directory!"
+```
+
+### Winget
+
+Microsoft is a great company, but seemingly incapable at advertising actual _useful_ tools. Unbeknownst to most, like Mac, Windows has its own package manager, _[Winget](https://winget.run)_. Using this'll make your life much easier when it comes to installing developer tools.
+
+:::tip
+Winget only works for Windows 10 and later, which is why you should make sure you upgrade!
+:::
+
+It comes by default with the Microsoft App Installer, which you can get on the [Microsoft Store](https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1) for free! If you already have it, ensure it's the latest version.
+
+## Step 2: Set up your IDE[^4]
+
+### Jetbrains Toolbox
+
+The tools you use can transform development from being a chore to a joy. Having a consistent environment across all
+languages is key. Throughout this guide we will be using the free (for students) Jetbrains tools, they have by
+far the most advanced IntelliSense[^5] capabilities, although sadly there is no tool for Haskell.
+
+1. If you have not already, sign-up for the [Jetbrains Student Pack](https://www.jetbrains.com/student/).
+
+2. Download the [Toolbox App](https://www.jetbrains.com/toolbox-app/) and sign in with your account. This will
+   automatically license any Jetbrains tools on your system.
+
+### Visual Studio Code[^6]
+
+Jetbrains's tools are great, but they're equally heavy. This is where the lightweight [Visual Studio Code](https://code.visualstudio.com) comes in. It's a fantastic code editor, with a huge community and a number of useful extensions.
+It works out of the box, with the support for syntax highlighting, debugging, git and many more!
+
+**You can download it [here](https://code.visualstudio.com)** or use winget:
+
+```powershell
+winget install -e --id Microsoft.VisualStudioCode
+```
+
+<details>
+  <summary>See how to run VS Code directly from Terminal!</summary>
+  <div>
+    <div>
+
+Sometimes, it is convenient to run VS Code from your terminal. Let's say you have a simple project in a directory called `hello-world/`.
+You can open it in VS Code just like this:
+
+```powershell
+code hello-world/
+```
+
+To make sure your shell understands what to do with the `code` keyword, you should ensure your VS Code is added to the `$PATH` environmental variable!
+Authors of VS Code made it really simple, and you can add VS Code to `$PATH` with the following steps:
+
+1. Open _VS Code_.
+2. Open the editor commands window by pressing `Shift`+`Cmd`+`P`.
+3. Type `Shell command PATH`, and select `Shell Command: Install 'code' command in PATH`.
+4. Authorize with your password, if prompted to do so.
+5. Voilà! Now, test it as follows.
+
+   - Navigate to the home directory:
+
+     ```powershell
+     cd ~
+     ```
+
+   - Open VS Code in the home directory
+
+     ```powershell
+     code .
+     ```
+
+   :::note
+
+   The dot symbol `.` represents your current directory, so you're essentially telling your terminal to run `code` "here"! _Cool, huh?_
+
+   :::
+
+</div>
+<br />
+
+  </div>
+</details>
+
+## Step 3: Git
+
+Download and install git using the following command:
+
+```powershell
+winget install -e --id Git.Git
+```
+
+Alternatively, install it from [here](https://git-scm.com/download/win).
+
+You then need to configure git with the commands below.
+To find your
+[github email address](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address)
+you can go here: https://github.com/settings/emails.
+
+```powershell
+git config --global user.name "YourUsername"
+git config --global user.email "YourEmail"
+```
+
+:::tip
+
+You will be using `git` and GitHub in several modules and courseworks.
+There are multiple ways of interacting with GitHub. You can use:
+
+- [GitHub Desktop](https://desktop.github.com/),
+- Git/GitHub extension to your IDE,
+- `git` command line interface.
+
+We **recommend** trying the command line interface. There is a range of useful tutorials:
+
+- How Git works https://www.atlassian.com/git
+- Official Git Tutorial https://git-scm.com/docs/gittutorial
+- Learn Git Branching (_really cool!_) https://learngitbranching.js.org/
+
+To make this as smooth as possible, you may want to [read how to use Secure Shell (SSH)](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) to connect to GitHub!
+:::
+
+## Step 4: Language Installation
 
 <DocCardList />
+
+## Additional Notes
+
+### Environment Variables
+
+To run an application in PowerShell you either need to know the full location of that executable
+(such as: `& "C:\Program Files\Java\jdk-12.0.2\bin\java.exe" -version` where the `&` just informs
+PowerShell that the following string points to an executable). Or it needs to be on the `PATH`[^7]; if
+`C:\Program Files\Java\jdk-12.0.2\bin\` is on the `PATH` then you can simply type `java -version`.
+So how do you add programs to the `PATH`? Well first you should consider that you might not want to add everything to the
+`PATH`; only folders which you think you will need to use from the command line.
+
+To add a folder to the `PATH` search for Environment Variable in the start menu, the first option should open
+System Properties. Click on Environment Variables at the bottom right; at the top you can see all the user
+variables. We are interested in the Path Variable so select it and click Edit. To add a new folder to the
+`PATH` click New (top right) and write the full folder name. There is also a `PATH` variable under system variables
+(the bottom box) which applies to all users however you should mainly use the `PATH` under user variables.
+
+<!-- ![Environment Variables](../images/windows-additional-notes-path.png) -->
+
+### Unix Emulation
+
+Windows Subsystem for Linux (or WSL) lets you run Linux software and a full Linux command line from within Windows
+without having to reboot or run a Virtual Machine. You can also access all your Windows files from WSL without
+having to do any magic or hackery. If you need this functionality a good guide can be found here:
+https://docs.microsoft.com/en-us/windows/wsl/install-win10.
+
+[^1]: See Oracle Corp's [VirtualBox](https://www.virtualbox.org) or Microsoft's [Hyper-V](https://en.wikipedia.org/wiki/Hyper-V)
+[^2]: Microsoft's [Windows Subsystem for Linux](<(https://learn.microsoft.com/en-us/windows/wsl/about)>)
+[^3]: If you are unsure, you can check your [OS system info](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808)
+[^4]: [Integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment). Basically what allows you to write code.
+[^5]: Auto code completion.
+[^6]: The cool kids call it VS Code.
+[^7]: `PATH`, a.k.a. path: system variable used to locate executables in the shell.
