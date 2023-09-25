@@ -1,0 +1,145 @@
+---
+sidebar_position: 2
+sidebar_label: C
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# The C Programming Language
+
+> C has the power of assembly language and the convenience of … assembly language. -- _Dennis Ritchie_
+
+C on Windows is not the best experience but virtualizing UNIX is not the solution.
+
+## Install Cygwin
+
+Cygwin is an extensive collection of GNU and open-source tools that give access to Linux-like functionality on Windows. One of these tools, `gcc`, is the de facto compiler for C, which you will need during your degree.
+
+You can either install Cygwin [here](https://cygwin.com/install.html) or use winget:
+
+```powershell
+winget install -e --id Cygwin.Cygwin
+```
+
+When installing Cygwin you will need to select
+`gcc-g++`, `cmake`, `make`, and `gdb` from the packages list.
+
+![Cygwin!](/img//windows-cygwin.png)
+
+## Configure your IDE
+
+:::tip
+
+While you can probably survive your C class without touching Terminal, **we recommend using it**!
+It not only gives you a better understanding of how a computer program is created, but also **prepares you for your further modules, which almost certainly will require familiarity with the shell**.
+
+:::
+
+<Tabs>
+<TabItem value="vs-code" label="VS Code" default>
+
+**Let's use VS Code to create a simple C program!**
+
+1. Open VS Code and create an empty file called `main.c`. This will be our C code source file. Such files have the `.c` extension!
+2. Enable language support for C by installing the C/C++ Microsoft extension.
+
+![C/C++ Microsoft extension](/img/c_extension.png)
+
+3. Paste the following snippet and save the file:
+
+   ```c
+   #include <stdio.h>
+
+   int main() {
+       printf("Hello, World!\n");
+       return 0;
+   }
+   ```
+
+4. Now, you need to _compile_[^1] your code. Let's see how we can do it from PowerShell (or VS Code's built-in shell). Open PowerShell in the same directory as the `main.c` file and run the following command:
+
+```powershell
+gcc -o main_executable main.c
+```
+
+This command will invoke `gcc` - compiler of the C code, compile the file called `main.c` and output a binary file named `main_executable`. 5. To run your program, simply type:
+
+```powershell
+./main_executable
+```
+
+which should produce
+
+```powershell
+> Hello, World!
+```
+
+Well done! 🎉 🥳
+
+</TabItem>
+
+<TabItem value="jetbrains-clion" label="JetBrains CLion">
+
+**Nevermind, let's use CLion instead!**
+
+1. Open the Jetbrains Toolbox and install [CLion](https://www.jetbrains.com/clion/)
+
+2. Open CLion, click configure and then open `Toolchains` under `Build, Execution, Deployment`. Click the small plus
+   button and select Cygwin, if your environment is not found automatically select the dropdown and find the root of
+   your cygwin install. Ensure that CMake, Make, C Compiler, and Debugger are all found (either detected or a
+   small tick mark).
+
+![CLion Toolchain!](/img/windows-c-toolchain.png)
+
+3. Click OK, and then press `New Project`, select C executable from the new project screen with any language standard.
+   A simple Hello World program should open and if you click the play symbol at the top right it will compile and execute
+   in a terminal at the bottom of the screen.
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+return 0;
+}
+```
+
+![CLion Toolchain!](/img/windows-c-run.png)
+
+:::note
+CLion uses [CMake](https://cmake.org) to configure running your project. While others are worrying about linking new files to their project, you can simply add it to the `add_executable` section (as shown with `new_file.c` below).
+
+```c
+cmake_minimum_required(VERSION 3.16)
+project(untitled C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(untitled main.c new_file.c)
+```
+
+:::
+
+</TabItem>
+</Tabs>
+
+## Additional Notes
+
+1. If you ever need to pipe something from C to another program (such as a turtle program) then you can compile your
+   application and then run your executable in PowerShell Core with a pipe operator.
+
+```powershell
+.\your_program.exe | turtle.exe
+```
+
+2. If you ever need to access `gcc` directly then you can open the installed `Cygwin Terminal`.
+
+3. If compiling with Cygwin via the terminal results in an access denied message you can try disabling your real-time anti-virus scanning.
+
+:::caution
+Certain courseworks in C require that the code be compilable on UNIX systems (MacOS, Linux etc.), which Windows is not. As such, it is strongly recommended you test your code on a UNIX machine to ensure that your code functions on both machines. To access a Linux instance, you can either use virtualization, [multi-booting](https://en.wikipedia.org/wiki/Multi-booting)[^2], or use the [UCL CS lab machines](/docs/labs-availability) (recommended).
+:::
+
+[^1]: Create an executable from given source code.
+[^2]: Installing several OSes on a single computer and choosing which one to boot.

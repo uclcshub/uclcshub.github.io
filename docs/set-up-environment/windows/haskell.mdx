@@ -1,0 +1,64 @@
+---
+sidebar_position: 3
+sidebar_label: Haskell
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Haskell
+
+> Code written in Haskell is guaranteed to have no side effects ... because no one will ever run it?
+> -- _[XKCD 1312](https://www.xkcd.com/1312)_
+
+## Install Haskell
+
+<Tabs>
+<TabItem value="winget" label="Winget" default>
+
+Simply run the following command in PowerShell:
+
+```powershell
+winget install -e --id commercialhaskell.stack
+```
+
+</TabItem>
+
+<TabItem value="ghcup" label="GHCup (officially supported)">
+
+Haskell recently changed the recommended installation method to installing GHCup. These instructions are based off
+[https://www.haskell.org/downloads/](https://www.haskell.org/downloads/).
+
+1. Install GHC, cabal-install, stack and haskell-language-server via GHCup with the script below:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true
+```
+
+There's also a [youtube video](https://www.youtube.com/watch?v=bB4fmQiUYPw) explaining installation on Windows.
+
+</TabItem>
+</Tabs>
+
+<details>
+<summary> Let's test your installation!</summary>
+
+1. Type `ghci` in PowerShell. This will open Prelude - Haskell's interactive shell.
+2. Type `2022 + 1` and hit `Enter`.
+3. Enjoy Haskell telling you the current year! _Woooah!_ 🥳
+
+</details>
+
+## Get the VS Code extension
+
+JetBrains do not have an IDE for Haskell,
+but VS Code works very well with the **official Haskell extension**!
+
+![haskell extensions](/img/haskell_extension.png)
+
+:::tip
+
+Cool! You're all set to start your journey with functional programming.
+Psst... There is a pretty good online guide to Haskell: [Learn You A Haskell for Great Good!](http://learnyouahaskell.com/) 📚
+
+:::
