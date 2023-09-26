@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>UCL Computer Science Hub 💅 Blog</title>
+        <link>https://uclcshub.github.io/blog</link>
+        <description>UCL Computer Science Hub 💅 Blog</description>
+        <lastBuildDate>Mon, 25 Sep 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Hello! 👋]]></title>
+            <link>https://uclcshub.github.io/blog/welcome</link>
+            <guid>https://uclcshub.github.io/blog/welcome</guid>
+            <pubDate>Mon, 25 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to UCL CS!]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="welcome-to-ucl-cs">Welcome to UCL CS!<a href="#welcome-to-ucl-cs" class="hash-link" aria-label="Direct link to Welcome to UCL CS!" title="Direct link to Welcome to UCL CS!">​</a></h2><p>Welcome to the UCL CS community! The academic year just kicked-off and you'll start your first programming classes soon! 🖥️</p><p>To help you deal with the unknown, we prepared this website as a good starting point to <a href="/blog/docs/set-up-environment">set up your environment</a>!
+Moreover, throughout the year you'll be supported by Programming Tutors, who will be there to help you understand programming concepts, and answer all your questions!</p><p>Keep in mind you're here not only to study, but also to explore and meet with others - there is so much to do at UCL and in London! 🎉</p><p>Good luck! 🥳</p>]]></content:encoded>
+            <category>welcome</category>
+        </item>
+    </channel>
+</rss>
