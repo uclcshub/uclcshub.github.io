@@ -17,21 +17,21 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg margin--md"
-            to="/docs/labs-availability/MPEB105"
+            to="/docs/labs-availability"
           >
-            MPEB 1.05 🟠
+            Find a Study Space 🖥️
           </Link>
           <Link
             className="button button--secondary button--lg margin--md"
-            to="/docs/labs-availability/MPEB121"
+            to="/docs/set-up-environment"
           >
-            MPEB 1.21 🖥️
+            Set up Your Environment 🛠️
           </Link>
           <Link
             className="button button--secondary button--lg margin--md"
-            to="/docs/labs-availability/MPEB406"
+            to="/blog"
           >
-            MPEB 4.06 ⚡️
+            Read the Blog 📝
           </Link>
         </div>
       </div>
@@ -42,7 +42,10 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description="Resources and more!">
+    <Layout
+      title={`${siteConfig.title}`}
+      description="UCL CS Resources and more!"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />

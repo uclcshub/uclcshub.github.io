@@ -13,11 +13,31 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: "See how you can set up your own computer! 💻",
+    Svg: require("@site/static/img/setup.svg").default,
+    description: (
+      <>
+        In the beginning of the academic year, when switching to a new OS, or
+        just for fun! ⚙️
+      </>
+    ),
+  },
+  {
+    title: "Have a look at our blog! 📚",
+    Svg: require("@site/static/img/blog.svg").default,
+    description: (
+      <>
+        We *plan* to post here some useful content, like tips and event
+        announcements! ⚡️
+      </>
+    ),
+  },
 ];
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx("col col--12")}>
+    <div className={clsx("col")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
