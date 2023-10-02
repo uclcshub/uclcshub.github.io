@@ -25,4 +25,8 @@ Come grab a seat to study, chat, or relax with a cup of joe! ☕️
 ## Directions
 Malet Place Engineering Building, 4th floor, Room 4.06 (a.k.a Apps Lab).
 
+<p align="center">
+<img src="/img/MPEB_406.jpeg" width="30%"/>
+</p>
+
 The sneakiest of the three. When exiting the elevator on the 4th floor, go to the corridor next to the emergency staircase and women's bathroom. Authenticate with your student card and walk straight until you reach the end of the hall, which also happens to be the door to room 4.06!
