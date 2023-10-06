@@ -37,7 +37,7 @@ const config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -62,6 +62,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "announcementBar",
+        content:
+          'CS labs timetables are now available. 🎉 <a href="/docs/labs-availability">Have a look</a>! 👀',
+      },
       // Replace with your project's social card
       // image: "",
       navbar: {
