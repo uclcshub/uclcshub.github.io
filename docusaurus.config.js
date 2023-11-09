@@ -65,7 +65,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          'CS labs timetables are now available. 🎉 <a href="/docs/labs-availability">Have a look</a>! 👀',
+          'Make sure to join <a href="https://discord.gg/x6jsEKcZd5">UCL CS Discord Server</a>! 💻 🎉',
       },
       // Replace with your project's social card
       // image: "",
@@ -92,12 +92,17 @@ const config = {
             label: "Set Up Your Environment",
             position: "left",
           },
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "https://discord.gg/x6jsEKcZd5",
+            label: "UCL CS Discord",
+            position: "right",
+          },
           {
             href: "https://enghub.io/",
             label: "Engineering Hub",
             position: "right",
           },
-          { to: "/blog", label: "Blog", position: "left" },
         ],
       },
       footer: {
@@ -127,10 +132,10 @@ const config = {
                 label: "Blog",
                 to: "/blog",
               },
-              // {
-              //   label: "UCL CS Discord",
-              //   href: "",
-              // },
+              {
+                label: "UCL CS Discord",
+                href: "https://discord.gg/x6jsEKcZd5",
+              },
               {
                 label: "Engineering Hub",
                 href: "https://enghub.io/",
