@@ -65,7 +65,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          'CS labs timetables are now available. 🎉 <a href="/docs/labs-availability">Have a look</a>! 👀',
+          'Make sure to join <a href="https://discord.gg/x6jsEKcZd5">UCL CS Discord Server</a>! 💻 🎉',
       },
       // Replace with your project's social card
       // image: "",
