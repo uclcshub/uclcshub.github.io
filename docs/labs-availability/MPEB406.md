@@ -13,12 +13,12 @@ Come grab a seat to study, chat, or relax with a cup of joe! ☕️
 | Time/Day        |   Monday    |   Tuesday   | Wednesday |  Thursday   | Friday |
 | --------------- | :---------: | :---------: | :-------: | :---------: | :----: |
 | **8AM - 9AM**   |     ✅      |     ✅      |    ✅     |     ✅      |   ✅   |
-| **9AM - 10AM**  |     ✅      | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
-| **10AM - 11AM** |     ✅      | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
-| **11AM - 12PM** | COMP0002 ❌ | COMP0002 ❌ |    ✅     |     ✅      |   ✅   |
-| **12PM - 1PM**  | COMP0002 ❌ | COMP0002 ❌ |    ✅     | COMP0016 ❌ |   ✅   |
-| **1PM - 2PM**   |     ✅      | COMP0002 ❌ |    ✅     | COMP0016 ❌ |   ✅   |
-| **2PM - 3PM**   |     ✅      | COMP0002 ❌ |    ✅     |     ✅      |   ✅   |
+| **9AM - 10AM**  | COMP0004 ❌ | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
+| **10AM - 11AM** | COMP0004 ❌ | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
+| **11AM - 12PM** |     ✅      | COMP0004 ❌ |    ✅     |     ✅      |   ✅   |
+| **12PM - 1PM**  |     ✅      | COMP0004 ❌ |    ✅     | COMP0004 ❌ |   ✅   |
+| **1PM - 2PM**   |     ✅      | COMP0016 ❌ |    ✅     | COMP0004 ❌ |   ✅   |
+| **2PM - 3PM**   |     ✅      | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
 | **3PM - 4PM**   |     ✅      | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
 | **4PM - 5PM**   |     ✅      | COMP0016 ❌ |    ✅     |     ✅      |   ✅   |
 | **5PM - 6PM**   |     ✅      |     ✅      |    ✅     |     ✅      |   ✅   |
