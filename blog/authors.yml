@@ -17,3 +17,8 @@ aditya:
   name: Aditya Parashar
   title: Senior Programming Tutor
   image_url: img/authors/aditya.jpeg
+
+ivana:
+  name: Ivana Drobnjak
+  title: Professor of Computational Healthcare
+  image_url: img/authors/ivana.jpg
