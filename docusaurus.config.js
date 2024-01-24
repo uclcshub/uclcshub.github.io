@@ -64,8 +64,7 @@ const config = {
     ({
       announcementBar: {
         id: "announcementBar",
-        content:
-          "<a href='/docs/labs-availability'> Labs availability</a> updated for Term 2! ✅ 💻",
+        content: "Check out our <a href='/blog/'>latest blog post</a>! 🧑‍💻",
       },
       // Replace with your project's social card
       // image: "",
