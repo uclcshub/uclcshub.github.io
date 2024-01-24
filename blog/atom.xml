@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://uclcshub.github.io/blog</id>
     <title>UCL Computer Science Hub 💅 Blog</title>
-    <updated>2023-09-25T00:00:00.000Z</updated>
+    <updated>2024-01-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://uclcshub.github.io/blog"/>
     <subtitle>UCL Computer Science Hub 💅 Blog</subtitle>
     <icon>https://uclcshub.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Ask a CS Academic - Starting University Again 🕰️]]></title>
+        <id>https://uclcshub.github.io/blog/ask-academics1</id>
+        <link href="https://uclcshub.github.io/blog/ask-academics1"/>
+        <updated>2024-01-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What if I were to start university again?]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if-i-were-to-start-university-again">What if I were to start university again?<a href="#what-if-i-were-to-start-university-again" class="hash-link" aria-label="Direct link to What if I were to start university again?" title="Direct link to What if I were to start university again?">​</a></h2><p>Hmm. This is a question I have never asked myself before now. I have just asked ChatGPT to enquire for its wisdom and got a perfectly sensible answer: Dive into projects early to get practical experience, seek out mentors as they can provide guidance and resources, engage with clubs and societies to make new like-minded friends, do internships to learn about work-environments, develop soft skills as communication, teamwork and time-management are just as important – AND do it all while balancing your academic and social life. </p><p>I have done all these as a student and recommend all these, and often teach them to students, and henceforth to you - however it feels incomplete. The true answer is highly personal, and it will be very personal to each of you as each of you will need something different. There are many points that come to mind regarding my own personal experience. One of them that was extremely important to me and that I only came to learn later in life was to understand, respect and look after my body and mind. This means learning to sleep right, exercise right, eat right, work right, take care of my emotions … it sounds so simple and yet 19-year-old Ivana did not really know and learned all this hard way. I would have certainly appreciated a mentor, however when I was a student, opportunities like the ones you have here at UCL were simply not available. </p><p>UCL is one of the best universities in the world. It is not only amazing for research and teaching but also looks after its students and is committed to supporting them. Of course, things don’t always work out – but if it is not perfect at UCL,  it is extremely likely that is the same at other brilliant universities. So, focus on the positives and re-define the negatives – use them to harness resilience and learn real-world problem solving – qualities as valuable as academic experience.</p><p>Give your best to learn and play with the modules you are taking, and identify which one, or part of one, or skill needed to do one, you really have fun with: You could do it for hours + It does not make you bored + You keep web-browsing it + You get lost in it = You have found your passion. Then become the master of that craft. Became great at it. Find an academic or a postdoc or a student who is great at it and learn from the best. The academics that work at UCL are world renown and you have an opportunity to meet them, work with them, and learn from them. Come to them prepared, with a will to learn and it is very likely that in one of those research projects you do with them in your final year, or over summer, you collaborate on something great – and it maybe leads to a paper, or a start-up, or a great reference, or a life career journey, or at the very least forges a meaningful and enriching connection.</p><p>At the end of it all – and this is what probably everybody keeps telling you, but it is so true - it's not just about the outcome; remember to smell the roses 😊. It's about the journey—the experiences, the growth, and the relationships that will inform and inspire your path forward.</p>]]></content>
+        <author>
+            <name>Ivana Drobnjak</name>
+        </author>
+        <category label="degree" term="degree"/>
+        <category label="advice" term="advice"/>
+        <category label="university" term="university"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello! 👋]]></title>
         <id>https://uclcshub.github.io/blog/welcome</id>
