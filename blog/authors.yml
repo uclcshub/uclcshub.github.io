@@ -1,24 +1,24 @@
 andrzej:
   name: Andrzej Szablewski
   title: Senior Programming Tutor
-  image_url: img/authors/andrzej.jpg
+  image_url: /img/authors/andrzej.jpg
 
 sid:
   name: Sid Charaschanya
   title: Senior Programming Tutor
-  image_url: img/authors/sid.JPG
+  image_url: /img/authors/sid.JPG
 
 morgane:
   name: Morgane Ohlig
   title: Senior Programming Tutor
-  image_url: img/authors/morgane.JPG
+  image_url: /img/authors/morgane.JPG
 
 aditya:
   name: Aditya Parashar
   title: Senior Programming Tutor
-  image_url: img/authors/aditya.jpeg
+  image_url: /img/authors/aditya.jpeg
 
 ivana:
   name: Ivana Drobnjak
   title: Professor of Computational Healthcare
-  image_url: img/authors/ivana.jpg
+  image_url: /img/authors/ivana.jpg
