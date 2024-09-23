@@ -22,3 +22,23 @@ ivana:
   name: Ivana Drobnjak
   title: Professor of Computational Healthcare
   image_url: /img/authors/ivana.jpg
+
+sara:
+  name: Sara Abdullahi
+  title: Senior Programming Tutor
+  image_url: /img/authors/sara.jpg
+
+peter:
+  name: Jiuyu (Peter) Zhang
+  title: Senior Programming Tutor
+  image_url: /img/authors/peter.jpg
+
+harsh:
+  name: Harsh Mishra
+  title: Senior Programming Tutor
+  image_url: /img/authors/harsh.jpg
+
+ari:
+  name: Ari Weiler-Ofek
+  title: Senior Programming Tutor
+  image_url: /img/authors/ari.png
