@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://uclcshub.github.io/blog</id>
     <title>UCL Computer Science Hub 💅 Blog</title>
-    <updated>2024-01-24T00:00:00.000Z</updated>
+    <updated>2024-09-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://uclcshub.github.io/blog"/>
     <subtitle>UCL Computer Science Hub 💅 Blog</subtitle>
     <icon>https://uclcshub.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to UCL CS 2024 👋]]></title>
+        <id>https://uclcshub.github.io/blog/welcome-2024-2025</id>
+        <link href="https://uclcshub.github.io/blog/welcome-2024-2025"/>
+        <updated>2024-09-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to UCL CS!]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="welcome-to-ucl-cs">Welcome to UCL CS!<a href="#welcome-to-ucl-cs" class="hash-link" aria-label="Direct link to Welcome to UCL CS!" title="Direct link to Welcome to UCL CS!">​</a></h2><p>Welcome to the UCL CS community! The academic year just kicked-off and you'll start your first programming classes soon! 🖥️</p><p>To help you deal with the unknown, we prepared this website as a good starting point to <a href="/blog/docs/set-up-environment">set up your environment</a>!
+Moreover, throughout the year you'll be supported by Programming Tutors, who will be there to help you understand programming concepts, and answer all your questions!</p><p>Keep in mind you're here not only to study, but also to explore and meet with others - there is so much to do at UCL and in London! 🎉</p><p>Good luck! 🥳</p>]]></content>
+        <author>
+            <name>Jiuyu (Peter) Zhang</name>
+        </author>
+        <author>
+            <name>Sara Abdullahi</name>
+        </author>
+        <author>
+            <name>Harsh Mishra</name>
+        </author>
+        <author>
+            <name>Ari Weiler-Ofek</name>
+        </author>
+        <category label="welcome" term="welcome"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ask a CS Academic - Starting University Again 🕰️]]></title>
         <id>https://uclcshub.github.io/blog/ask-academics1</id>
